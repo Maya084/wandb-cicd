@@ -20,4 +20,4 @@ jobs:
       - name: see payload
         run: echo "PAYLOAD:\n${PAYLOAD}\n"
         env: 
-          PAYLOAD: ${{ toJSDON(github.event) }}
+          PAYLOAD: ${{ toJSON(github.event) }}
